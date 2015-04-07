@@ -9,9 +9,9 @@ def get_season_results(team):
 		print colored.yellow("[*] Getting "+seasonsquery)
 		r = requests.get(seasonsquery,
     	headers={
-        	"Authorization": "Bearer 90448d9e-2eab-4b41-8b73-a919824bc36f",
+        	"Authorization": "",
         	'User-Agent': 'python test',
-    		'From': 'endersavage@gmail.com'
+    		'From': ''
     	},
     	cookies={},
 		)
@@ -26,9 +26,9 @@ def get_team_stats(team):
 	print colored.yellow("[*] Getting "+teamquery)
 	r = requests.get(teamquery,
     headers={
-        	"Authorization": "Bearer 90448d9e-2eab-4b41-8b73-a919824bc36f",
-        	'User-Agent': 'python test',
-    		'From': 'zimbabwhemahn@gmail.com'
+        	"Authorization": "",
+        	'User-Agent': '',
+    		'From': 'm'
     },
     	cookies={},
 	)
@@ -44,9 +44,9 @@ def get_box_score(eventid):
 
 	r = requests.get(boxquery,
     headers={
-        	"Authorization": "Bearer 90448d9e-2eab-4b41-8b73-a919824bc36f",
-        	'User-Agent': 'Box Score Harvest Bot, endersavage@gmail.com',
-    		'From': 'endersavage@gmail.com @endersavage'
+        	"Authorization": "",
+        	'User-Agent': '',
+    		'From': ''
     },
     	cookies={},
 	)
